@@ -1,10 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    private int cerrentTurn; // 1-4
+    private int cerrentDay = 1; // 10 day
+    private int cerrentTurn = 1; // 1-4 turn
 
     private int halth = 10;
     private int bargain = 10;
@@ -22,6 +23,23 @@ public class Test : MonoBehaviour
     
     void Update()
     {
+        if (cerrentDay == 10)
+        {
+            Debug.Log("Score summary");
+        }
+        else
+        {
+            if (cerrentDay > 1)
+            {
+                //Random card transport
+            }
+            else
+            {
+                //Random card PR
+            }
+        }
+
+
         if (isPressAPbutton)
         {
             averagePrice.SetActive(true);
